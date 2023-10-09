@@ -284,10 +284,12 @@ function sendEMail(params){
     document.getElementById("email").value ='';
     document.getElementById("message").value = '';
   }
-
-
-
 }
+// Funktion zum Drucken der Seite
+function printPage() {
+  window.print();
+}
+
 
 
 
