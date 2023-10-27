@@ -18,14 +18,12 @@ body {
 a {
   color: #149ddd;
   text-decoration: none;
- 
   transition: color 0.3s;
 }
 
 a:hover {
   color: #37b3ed;
-  
-  
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all ease-in-out 0.5s;
   z-index: 9997;
   transition: all 0.5s;
-  padding: 15px;
+  padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
 }
@@ -83,14 +81,12 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 120px;
   border: 8px solid #2c2f3f;
-  border-radius: 50%;
 }
 #header .profile h1 {
   font-size: 24px;
   margin: 0;
   padding: 0;
   font-weight: 600;
-  text-align: center;
   -moz-text-align-last: center;
   text-align-last: center;
   font-family: "Poppins", sans-serif;
@@ -205,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(".../img/hero-bg.jpg") top center;
+  background: url("../img/hero-bg.jpg") top center;
   position: relative;
   color: #fff;
   text-align:center;
@@ -229,22 +225,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 56px;
-  font-weight: 800;
+  font-size: 64px;
+  font-weight: 700;
   line-height: 56px;
-  color: #04b8be;
+  color: #fff;
 }
 #hero p {
-  color: #b6eeefd2;
+  color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 #hero p span {
-  color: #a0cfde;
+  color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 1.5px solid #c7e4f1;
+  border-bottom: 3px solid #149ddd;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -287,20 +283,10 @@ section {
   position: relative;
   color: #173b6c;
 }
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #149ddd;
-  bottom: 0;
-  left: 0;
-}
+
 .section-title p {
   margin-bottom: 0;
 }
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -429,7 +415,7 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform:none  ;
   font-family: "Poppins", sans-serif;
   color: #050d18;
   margin-bottom: 10px;
@@ -950,8 +936,6 @@ section {
 }
 #footer .copyright {
   text-align: center;
-  margin-bottom: 5px;
-  color:#a0a0a0
 }
 #footer .credits {
   padding-top: 5px;
@@ -966,7 +950,6 @@ section {
     padding-right: 20px 15px;
   }
 }
-
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -992,9 +975,3 @@ section {
 .mobile-nav-active #header {
   left: 0;
 }
-
-
-
-
-
-
